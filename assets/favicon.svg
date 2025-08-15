@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset="1" stop-color="#4dd0e1"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="48" fill="#0b0d10"/>
+  <g transform="translate(40,35)">
+    <rect x="8" y="128" width="160" height="24" rx="12" fill="url(#g)"/>
+    <rect x="24" y="48" width="128" height="84" rx="16" fill="#12151a" stroke="#2b2f36" stroke-width="4"/>
+    <rect x="32" y="56" width="112" height="16" rx="8" fill="#2b2f36"/>
+    <rect x="48" y="80" width="80" height="8" rx="4" fill="#7c5cff"/>
+    <rect x="48" y="96" width="64" height="8" rx="4" fill="#4dd0e1"/>
+    <circle cx="24" cy="160" r="10" fill="#7c5cff"/>
+    <circle cx="152" cy="160" r="10" fill="#4dd0e1"/>
+    <text x="64" y="190" font-family="Inter, system-ui" font-size="22" font-weight="800" fill="#e6e8eb">KF</text>
+  </g>
+</svg>
