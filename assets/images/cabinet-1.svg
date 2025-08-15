@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+  <rect width="1600" height="1200" fill="#0d1218"/>
+  <g transform="translate(200,260)">
+    <rect x="0" y="0" width="1200" height="520" rx="24" fill="#374456"/>
+    <rect x="40" y="40" width="1120" height="440" rx="16" fill="#425269"/>
+    <rect x="100" y="80" width="320" height="360" rx="8" fill="#506280"/>
+    <rect x="480" y="80" width="320" height="360" rx="8" fill="#506280"/>
+    <rect x="860" y="80" width="320" height="360" rx="8" fill="#506280"/>
+    <circle cx="260" cy="280" r="8" fill="#dfe6f0"/>
+    <circle cx="640" cy="280" r="8" fill="#dfe6f0"/>
+    <circle cx="1020" cy="280" r="8" fill="#dfe6f0"/>
+    <text x="0" y="520" fill="#aab4c3" font-family="Inter, sans-serif" font-weight="700" font-size="40">Cabinet — Placeholder</text>
+  </g>
+</svg>
