@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kulariya Furniture — Catalogue & Videos</title>
+    <meta name="description" content="Kulariya Furniture. Timeless designs crafted for modern living. Browse our catalogue and watch videos." />
+    <meta property="og:title" content="Kulariya Furniture" />
+    <meta property="og:description" content="Timeless designs crafted for modern living. Browse our catalogue and watch videos." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      // Early theme boot to prevent flash
+      (() => {
+        const stored = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-theme", stored || (prefersDark ? "dark" : "light"));
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="#" class="brand">
+          <img class="brand-logo" src="assets/favicon.svg" alt="" />
+          <span class="brand-text">Kulariya Furniture</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Primary">
+          <a href="#catalogue">Catalogue</a>
+          <a href="#videos">Videos</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3a1 1 0 0 1 1 1v1.05a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1Zm7.07 3.93a1 1 0 0 1 0 1.41l-.74.74a1 1 0 0 1-1.41-1.41l.74-.74a1 1 0 0 1 1.41 0ZM21 13a1 1 0 1 1 0-2h1a1 1 0 1 1 0 2h-1ZM5.08 5.64a1 1 0 0 1 1.41 0l.74.74A1 1 0 0 1 5.82 7.8l-.74-.74a1 1 0 0 1 0-1.41ZM12 19a1 1 0 0 1 1 1v1.05a1 1 0 1 1-2 0V20a1 1 0 0 1 1-1Zm8.07-3.36a1 1 0 0 1 0 1.41l-.74.74a1 1 0 0 1-1.41-1.41l.74-.74a1 1 0 0 1 1.41 0ZM3 13a1 1 0 1 1 0-2H2a1 1 0 1 1 0 2h1Zm2.93 4.07a1 1 0 0 1 1.41 0l.74.74a1 1 0 0 1-1.41 1.41l-.74-.74a1 1 0 0 1 0-1.41Z"></path>
+            </svg>
+          </button>
+          <button id="hamburger" class="icon-btn hamburger" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Timeless furniture for modern living</h1>
+            <p>Discover premium sofas, chairs, tables, and storage crafted with quality and comfort in mind.</p>
+            <div class="hero-ctas">
+              <a class="btn primary" href="#catalogue">Browse Catalogue</a>
+              <a class="btn ghost" href="#videos">Watch Videos</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <div class="hero-card">
+              <img src="assets/images/sofa-1.svg" alt="Modern sectional sofa" />
+            </div>
+            <div class="hero-card small">
+              <img src="assets/images/chair-1.svg" alt="Designer lounge chair" />
+            </div>
+            <div class="hero-card small">
+              <img src="assets/images/table-1.svg" alt="Minimalist oak table" />
+            </div>
+          </div>
+        </div>
+        <div class="hero-gradient"></div>
+      </section>
+
+      <section id="catalogue" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Catalogue</h2>
+            <p class="muted">Filter by category to find the perfect piece for your space.</p>
+          </div>
+
+          <div class="filters" role="tablist" aria-label="Catalogue filters">
+            <button class="chip is-active" role="tab" aria-selected="true" data-filter="all">All</button>
+            <button class="chip" role="tab" data-filter="sofas">Sofas</button>
+            <button class="chip" role="tab" data-filter="chairs">Chairs</button>
+            <button class="chip" role="tab" data-filter="tables">Tables</button>
+            <button class="chip" role="tab" data-filter="storage">Storage</button>
+          </div>
+
+          <div id="catalogueGrid" class="grid">
+            <!-- Sofas -->
+            <article class="card" data-category="sofas" tabindex="0">
+              <div class="card-media">
+                <img src="assets/images/sofa-1.svg" alt="Sienna Sectional Sofa" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Sienna Sectional Sofa</h3>
+                <p class="card-meta">$1,499 • Linen Blend • Walnut Legs</p>
+              </div>
+            </article>
+
+            <article class="card" data-category="sofas" tabindex="0">
+              <div class="card-media">
+                <img src="assets/images/sofa-2.svg" alt="Arcadia 3-Seater Sofa" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Arcadia 3‑Seater</h3>
+                <p class="card-meta">$1,099 • Performance Fabric • Oak Frame</p>
+              </div>
+            </article>
+
+            <!-- Chairs -->
+            <article class="card" data-category="chairs" tabindex="0">
+              <div class="card-media">
+                <img src="assets/images/chair-1.svg" alt="Nova Lounge Chair" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Nova Lounge Chair</h3>
+                <p class="card-meta">$349 • Vegan Leather • Swivel Base</p>
+              </div>
+            </article>
+
+            <article class="card" data-category="chairs" tabindex="0">
+              <div class="card-media">
+                <img src="assets/images/chair-2.svg" alt="Kumo Dining Chair" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Kumo Dining Chair</h3>
+                <p class="card-meta">$129 • Oak • Ergonomic Back</p>
+              </div>
+            </article>
+
+            <!-- Tables -->
+            <article class="card" data-category="tables" tabindex="0">
+              <div class="card-media">
+                <img src="assets/images/table-1.svg" alt="Oslo Dining Table" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Oslo Dining Table</h3>
+                <p class="card-meta">$799 • Solid Oak • Seats 6</p>
+              </div>
+            </article>
+
+            <article class="card" data-category="tables" tabindex="0">
+              <div class="card-media">
+                <img src="assets/images/table-2.svg" alt="Halo Coffee Table" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Halo Coffee Table</h3>
+                <p class="card-meta">$259 • Tempered Glass • Steel</p>
+              </div>
+            </article>
+
+            <!-- Storage -->
+            <article class="card" data-category="storage" tabindex="0">
+              <div class="card-media">
+                <img src="assets/images/shelf-1.svg" alt="Atlas Bookshelf" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Atlas Bookshelf</h3>
+                <p class="card-meta">$499 • Modular • Walnut Veneer</p>
+              </div>
+            </article>
+
+            <article class="card" data-category="storage" tabindex="0">
+              <div class="card-media">
+                <img src="assets/images/cabinet-1.svg" alt="Nest Sideboard" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Nest Sideboard</h3>
+                <p class="card-meta">$699 • Soft-Close • Oak</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="videos" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Videos</h2>
+            <p class="muted">Explore product demos, walk-throughs, and behind-the-scenes craftsmanship.</p>
+          </div>
+
+          <div class="grid videos">
+            <article class="video-card" data-video-type="youtube" data-video-id="dQw4w9WgXcQ">
+              <div class="video-thumb">
+                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Showroom Tour video thumbnail" loading="lazy" />
+                <button class="play-btn" aria-label="Play video">▶</button>
+              </div>
+              <h3 class="card-title">Showroom Tour</h3>
+            </article>
+
+            <article class="video-card" data-video-type="youtube" data-video-id="ysz5S6PUM-U">
+              <div class="video-thumb">
+                <img src="https://img.youtube.com/vi/ysz5S6PUM-U/hqdefault.jpg" alt="Comfort Test: Sofas" loading="lazy" />
+                <button class="play-btn" aria-label="Play video">▶</button>
+              </div>
+              <h3 class="card-title">Comfort Test: Sofas</h3>
+            </article>
+
+            <article class="video-card" data-video-type="vimeo" data-video-id="76979871">
+              <div class="video-thumb">
+                <img src="assets/images/video-placeholder.svg" alt="Craftsmanship Spotlight video thumbnail" loading="lazy" />
+                <button class="play-btn" aria-label="Play video">▶</button>
+              </div>
+              <h3 class="card-title">Craftsmanship Spotlight</h3>
+            </article>
+
+            <article class="video-card" data-video-type="local" data-src="assets/videos/showroom.mp4">
+              <div class="video-thumb">
+                <img src="assets/images/video-placeholder.svg" alt="Local product reel thumbnail" loading="lazy" />
+                <button class="play-btn" aria-label="Play video">▶</button>
+              </div>
+              <h3 class="card-title">Product Reel (Local)</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact">
+          <div class="contact-card">
+            <h2>Contact</h2>
+            <p class="muted">Have questions or custom requests? We’d love to help.</p>
+
+            <ul class="contact-list">
+              <li><strong>Showroom:</strong> Kulariya Furniture</li>
+              <li><strong>Address:</strong> 123 Design Street, Modern City</li>
+              <li><strong>Email:</strong> hello@kulariya.example</li>
+              <li><strong>Phone:</strong> +1 (555) 123‑4567</li>
+            </ul>
+
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks! We will get back to you.');">
+              <div class="form-row">
+                <label>
+                  <span>Name</span>
+                  <input type="text" required placeholder="Your name" />
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input type="email" required placeholder="you@example.com" />
+                </label>
+              </div>
+              <label class="full">
+                <span>Message</span>
+                <textarea rows="4" required placeholder="How can we help?"></textarea>
+              </label>
+              <button class="btn primary" type="submit">Send message</button>
+            </form>
+          </div>
+
+          <div class="map-card">
+            <div class="map-embed">
+              <iframe
+                title="Map"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.041932!2d-122.4194155!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3AShowroom!2sKulariya%20Furniture!5e0!3m2!1sen!2sus!4v1680000000000">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer">
+        <p>© <span id="year"></span> Kulariya Furniture. All rights reserved.</p>
+        <p class="muted">Crafted with care. Built for modern living.</p>
+      </div>
+    </footer>
+
+    <!-- Modal (for images and videos) -->
+    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-content" role="document" aria-label="Expanded view">
+        <button class="icon-btn close" aria-label="Close" data-close-modal>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <div id="modalBody" class="modal-body"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
