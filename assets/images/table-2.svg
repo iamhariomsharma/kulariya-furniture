@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+  <rect width="1600" height="1200" fill="#0d1218"/>
+  <g transform="translate(140,420)">
+    <rect x="80" y="0" width="1160" height="40" rx="20" fill="#5c6c85"/>
+    <rect x="80" y="40" width="20" height="160" rx="10" fill="#304054"/>
+    <rect x="1220" y="40" width="20" height="160" rx="10" fill="#304054"/>
+    <circle cx="100" cy="240" r="12" fill="#304054"/>
+    <circle cx="1220" cy="240" r="12" fill="#304054"/>
+    <text x="0" y="320" fill="#aab4c3" font-family="Inter, sans-serif" font-weight="700" font-size="40">Coffee Table — Placeholder</text>
+  </g>
+</svg>
