@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+  <rect width="1600" height="1200" fill="#0d1218"/>
+  <g transform="translate(100,380)">
+    <rect x="0" y="240" width="1400" height="20" rx="10" fill="#3a4351"/>
+    <rect x="100" y="0" width="1200" height="60" rx="10" fill="#4a566a"/>
+    <rect x="110" y="20" width="1180" height="30" rx="10" fill="#55637a"/>
+    <rect x="100" y="60" width="20" height="200" rx="10" fill="#2b3441"/>
+    <rect x="1280" y="60" width="20" height="200" rx="10" fill="#2b3441"/>
+    <text x="20" y="320" fill="#aab4c3" font-family="Inter, sans-serif" font-weight="700" font-size="40">Table — Placeholder</text>
+  </g>
+</svg>
