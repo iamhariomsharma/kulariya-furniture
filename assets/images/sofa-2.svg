@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+  <rect width="1600" height="1200" fill="#10151c"/>
+  <g transform="translate(120,320)">
+    <rect x="0" y="220" rx="30" width="1360" height="160" fill="#2f3a49"/>
+    <rect x="100" y="0" rx="36" width="1160" height="220" fill="#3a4659"/>
+    <rect x="140" y="40" rx="24" width="1080" height="80" fill="#46556b"/>
+    <circle cx="140" cy="380" r="16" fill="#232a35"/>
+    <circle cx="1320" cy="380" r="16" fill="#232a35"/>
+    <text x="40" y="340" fill="#aab4c3" font-family="Inter, sans-serif" font-weight="700" font-size="40">Sofa — Placeholder</text>
+  </g>
+</svg>
